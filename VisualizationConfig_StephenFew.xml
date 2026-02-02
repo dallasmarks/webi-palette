@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CONFIG>
 	<!-- VisualizationConfig.xml -->
+	<!-- Dallas Marks -->
+	<!-- https://github.com/dallasmarks/webi-palette/ -->
+	<!-- https://dallasmarks.com/corporate-color-palettes-in-web-intelligence/ -->
+	<!-- ============================================================================================================== -->
+	<!-- v0.3	02/02/2026	Revised grayscale -->
+	<!-- v0.2	01/06/2026	Published on GitHub -->
+	<!-- v0.1	11/18/2014	Original Publication, https://dallasmarks.com/corporate-color-palettes-in-web-intelligence/ -->
+	<!-- ============================================================================================================== -->
 	<!-- The following section allows to define a corporate palette which will be used by default in all new visualization. -->
 	<!-- TOMCAT must be restarted after each modification of this file -->
-
 	<PALETTES>
+		<!-- Add a list of colors so as to define your palette (default palettes contains 32 colors): R for Red, G for Green, B for Blue and A for managing the transparency-->
+		<!-- Each attributes must take an integer value from 0 to 255 -->
+		<!-- The palette ID should not be changed.  -->
+		<!-- ============================================================================================================== -->
+		<!-- These palettes were suggested by Stephen Few in his book Show Me the Numbers. -->
+		<!-- The colors are identical, only the hue is lightened from Dark & Bright to Medium to Light -->
+		<!-- SAP requires 32 values for a Web Intelligence palette- last 5 are grayscale equivalents from his Light palette. -->
+		<!-- Few, Stephen. 2012. Show Me the Numbers: Designing Tables and Graphs to Enlighten. 2nd ed. Burlingame, CA: Analytics Press. -->
+		<!-- ISBN‑10: 0970601972. ISBN‑13: 9780970601971. -->
+		<!-- ============================================================================================================== -->
 		<PALETTE ID="corporate">
-			<!-- Add a list of colors so as to define your palette (default palettes contains 32 colors): R for Red, G for Green, B for Blue and A for managing the transparency-->
-			<!-- Each attributes must take an integer value from 0 to 255 -->
-			<!-- The palette ID should not be changed.  -->
-			<!-- Each attributes must take an integer value from 0 to 255 -->
-			<!-- The palette ID should not be changed. -->
 			<!-- Stephen Few Dark & Bright -->
 			<COLOR R="0" G="0" B="0" A="255"/>
 			<COLOR R="38" G="93" B="171" A="255"/>
@@ -41,12 +53,12 @@
 			<COLOR R="188" G="153" B="199" A="255"/>
 			<COLOR R="237" G="221" B="70" A="255"/>
 			<COLOR R="240" G="126" B="110" A="255"/>
-			<!-- The Rest (shades of grey) -->
-			<COLOR R="247" G="247" B="247" A="255"/>
-			<COLOR R="204" G="204" B="204" A="255"/>
-			<COLOR R="150" G="150" B="150" A="255"/>
-			<COLOR R="99" G="99" B="99" A="255"/>
-			<COLOR R="37" G="37" B="37" A="255"/>
+			<!-- The Rest (grayscale) -->
+			<COLOR R="178" G="178" B="178" A="255"/>
+			<COLOR R="189" G="189" B="189" A="255"/>
+			<COLOR R="180" G="180" B="180" A="255"/>
+			<COLOR R="197" G="197" B="197" A="255"/>
+			<COLOR R="164" G="164" B="164" A="255"/>
 		</PALETTE>
 	</PALETTES>
 </CONFIG>
